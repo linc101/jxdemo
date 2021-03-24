@@ -1,0 +1,8 @@
+# 说明
+1. 首先配置config.json,填入相应的endpoint 、用户名、密码
+2. 运行login.js,进行登录，token 将存入data 目录中
+3. 运行getTenantList.js，获取当前租户列表，结果将存入./data路中
+4. 根据步骤三的运行结果选择相应的tenantId，修改getProjectNamespaceByTenantId.js 14行中的响应字段并运行，获取project与NS信息
+5. 根据前文中的结果选取响应的tenantId与projectId，修改getModelList.js 中 7，8 行中的内容，运行之，获取模型列表。（此模型列表分为公开和私有）
+6. 根据前文中的结果选取响应的tenantId、projectId、模型url、模型版本、ns名称，修改createApp.js 中的相应内容，并运行以创建应用
+7. 根据前文中的结果选取响应的tenantId、projectId、模型url、模型版本、ns名称，修改massiveCreateApp.js 中的相应内容，并运行以大批量创建应用

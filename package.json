@@ -1,0 +1,14 @@
+{
+  "name": "jxdemo",
+  "version": "1.0.0",
+  "description": "demo",
+  "main": "index.js",
+  "author": "linc101 <gollink@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "form-data": "^4.0.0",
+    "form-urlencoded": "^4.2.1",
+    "json-form-data": "^1.7.2"
+  }
+}
