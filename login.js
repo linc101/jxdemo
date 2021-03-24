@@ -2,17 +2,9 @@ const axios = require('axios');
 const fs = require('fs');
 const config = require('./config');
 const FormData = require('form-data');
-
-
-
-
-
 const form = new FormData();
 form.append('username', config.username);
 form.append('password', config.password);
-
-
-
 
 axios.post(`${config.remoteEndpoint}/user/auth/login`, form, { headers: form.getHeaders() }) .then(function (response) {
     console.log(response);
